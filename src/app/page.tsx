@@ -23,8 +23,7 @@ export default function Page() {
             />
             <About aboutUs={`We are the native students of Raigon and nearby villages. We founded "The Magic Makers" foundation to help the impoverished and disadvantaged. Every week, we collect at least 50 Tk from our permanent members and spend it on them, regardless of caste or religion. We want to make our society, country, and the entire globe non-discriminatory, beautiful, and environmentally friendly.`}/>
             <HowToContribute />
-            <Footer />
-            <div className="mt-[100px]">H</div>
+            <Footer phone="01635364986" email="tauhidrana00@gmail.com"/>
         </div>
     );
 }
