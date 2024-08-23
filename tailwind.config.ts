@@ -8,10 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        color1: "#095845",
+        color2: "#00A3FF",
+        color3: "#D9D9D9",
+        color4: "#E8AD16",
+        color5: "#727170",
+        color6: "#77756F",
+        color7: "#333333",
+        color8: "#CDCDCD"
+      },
+      screens: {
+        tablet: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: "1280px",
+        // => @media (min-width: 1280px) { ... }
       },
     },
   },
