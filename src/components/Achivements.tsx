@@ -23,12 +23,12 @@ export function Achivements({
             <div className="flex justify-center items-center">
                 <div className="flex items-center gap-2">
                     <span
-                        className={`text-color5 tablet:text-[1.5rem] tet-[1.25rem] ${passionOne.className}`}
+                        className={`text-color5 tablet:text-[1.5rem] text-[1.25rem] ${passionOne.className}`}
                     >
-                        Our helped people
+                        We helped people
                     </span>
                     <span
-                        className={`tablet:text-[1.625rem] text-color1 ${passionOne.className} py-[3px] px-3 rounded-[13px] border-[2px] border-color6`}
+                        className={`tablet:text-[1.625rem] text-[1.35rem] text-color1 ${passionOne.className} tablet:py-[3px] py-[5px] px-3 rounded-xl border-[2px] border-color6`}
                     >
                         {helpedPeople}
                     </span>
@@ -53,8 +53,9 @@ export function Achivements({
                                 {totalDonation}
                             </span>
                         </div>
-                        <span className="text-color8 tablet:text-[1.125rem] text-[0.75rem]">
-                            Total donation we collected
+                        <span className="text-color8 tablet:text-[1.125rem] text-center text-[0.75rem]">
+                            {/* Total donation we collected */}
+                            আমাদের মোট দান সংগ্রহ হয়েছে এখন পর্যন্ত
                         </span>
                     </div>
 
@@ -92,8 +93,9 @@ export function Achivements({
                                 {numberOfMembers}
                             </span>
                         </div>
-                        <span className="text-color8 tablet:text-[1.125rem] text-[0.75rem]">
-                            Our total permanent members
+                        <span className="text-color8 tablet:text-[1.125rem] text-center text-[0.75rem]">
+                            {/* Our total permanent members */}
+                            আমাদের মোট স্থায়ী দাতার সংখ্যা এখন পর্যন্ত
                         </span>
                     </div>
 

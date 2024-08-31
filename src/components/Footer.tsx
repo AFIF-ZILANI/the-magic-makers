@@ -7,9 +7,9 @@ import ZerodImage from "@/assets/imags/zerod.png";
 
 export function Footer({ phone, email }: { phone: string; email: string }) {
     return (
-        <div className="bg-color7 pt-[9rem] pb-2 mt-4">
+        <div className="bg-color7 tablet:pt-[9rem] pt-10 tablet:pb-2 pb-4 mt-4">
             <div className="w-full flex justify-center">
-                <div className="flex tablet:w-[50vw] justify-between">
+                <div className="flex tablet:w-[50vw] w-[70vw] justify-between">
                     <div className="flex flex-col items-center">
                         <span className="text-color2 text-[0.75rem] tablet:text-base">
                             Action
@@ -80,7 +80,7 @@ export function Footer({ phone, email }: { phone: string; email: string }) {
                     <div className="w-[90vw] h-[1px] bg-color6"></div>
                 </div>
                 <div className="w-full flex justify-center">
-                    <div className="w-[95vw] flex justify-between">
+                    <div className="tablet:w-[95vw] w-[80vw] flex justify-between">
                         <span className="tablet:text-base text-[0.5rem] text-color5">
                             Privacy Policy
                         </span>
