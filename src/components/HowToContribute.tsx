@@ -26,7 +26,7 @@ export function HowToContribute() {
                     অর্থ দান করুন বা ব্যক্তিগতভাবে আমাদের সাথে কার্যক্রমে
                     অংশগ্রহণ করুন বা উভয়ই করুন৷ আমাদের সাথে কার্যক্রমে
                     অংশগ্রহণের জন্য আপনাকে অবশ্যই স্থায়ী সদস্য হতে হবে। | শুধু`}{" "}
-                    <span className="text-color2">"sign up"</span>{" "}
+                    <span className="text-color2">&quot;sign up&quot;</span>{" "}
                     {lang === "ENGLISH"
                         ? `with your
                     Gmail account. We will give you notifications for all
@@ -62,7 +62,7 @@ export function HowToContribute() {
                     click the `
                         : `ব্যবহার করে
                     অর্থ প্রদান করতে পারেন। শুধু`}{" "}
-                    <span className="text-color2">"Donate Now"</span>{" "}
+                    <span className="text-color2">&quot;Donate Now&quot;</span>{" "}
                     {lang === "ENGLISH"
                         ? `button, which will take you to the donation page. Then,
                     choose your favourite choice. It will again take you to the
