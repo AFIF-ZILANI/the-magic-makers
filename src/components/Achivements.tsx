@@ -1,23 +1,33 @@
+"use client";
+
 import React from "react";
 import { passionOne } from "@/fonts";
 import Image from "next/image";
 import BDTImage from "@/assets/imags/BDT.png";
 import MapImage from "@/assets/imags/map.png";
 import MemberIcon from "@/assets/imags/member.png";
+import { useAppContext } from "@/context";
 
 interface AchivementProp {
     helpedPeople: number;
     numberOfMembers: number;
     totalDonation: string;
-    currentLocation: string;
 }
 
 export function Achivements({
     helpedPeople,
     numberOfMembers,
     totalDonation,
-    currentLocation,
 }: AchivementProp) {
+    const { lang } = useAppContext();
+    const data = {
+        currentLocationE: "Raigon, Mohadevpur, Naogaon, Bangladesh",
+        currentLocationB: "রাইগাঁ, মহাদেবপুর, নওগাঁ, বাংলাদেশ",
+        memberSubtitleE: "Our total permanent members",
+        memberSubtileB: "আমাদের মোট স্থায়ী দাতার সংখ্যা এখন পর্যন্ত",
+        donationSubtitleE: "Total donation we collected",
+        donationSubtitleB: "আমাদের মোট দান সংগ্রহ হয়েছে এখন পর্যন্ত",
+    };
     return (
         <div className="w-full">
             <div className="flex justify-center items-center">
@@ -54,8 +64,9 @@ export function Achivements({
                             </span>
                         </div>
                         <span className="text-color8 tablet:text-[1.125rem] text-center text-[0.75rem]">
-                            {/* Total donation we collected */}
-                            আমাদের মোট দান সংগ্রহ হয়েছে এখন পর্যন্ত
+                            {lang === "ENGLISH"
+                                ? data.donationSubtitleE
+                                : data.donationSubtitleB}
                         </span>
                     </div>
 
@@ -72,7 +83,9 @@ export function Achivements({
                         <span
                             className={`${passionOne.className} text-center text-white tablet:text-[1.4rem] text-[1rem]`}
                         >
-                            {currentLocation}
+                            {lang === "ENGLISH"
+                                ? data.currentLocationE
+                                : data.currentLocationB}
                         </span>
                     </div>
 
@@ -94,8 +107,9 @@ export function Achivements({
                             </span>
                         </div>
                         <span className="text-color8 tablet:text-[1.125rem] text-center text-[0.75rem]">
-                            {/* Our total permanent members */}
-                            আমাদের মোট স্থায়ী দাতার সংখ্যা এখন পর্যন্ত
+                            {lang === "ENGLISH"
+                                ? data.memberSubtitleE
+                                : data.memberSubtileB}
                         </span>
                     </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { patrickHand } from "@/fonts";
+import { AppWrapper } from "@/context";
 
 import "./globals.css";
 
@@ -15,11 +16,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="scroll-smooth ">
-            <body
-                className={`${patrickHand.className}`}
-            >
-                {children}
-            </body>
+            <AppWrapper>
+                <body className={`${patrickHand.className}`}>{children}</body>
+            </AppWrapper>
         </html>
     );
 }

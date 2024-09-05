@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Logo from "@/assets/imags/logo.png";
 import Link from "next/link";
+import { ToggoleLang } from "./ToggoleLang";
 
 export function Navbar() {
     return (
-        <div className="flex p-3 items-center">
+        <div className="flex p-3 items-center select-none">
             <div className="relative tablet:w-[70px] w-[44px] tablet:h-[73.75px] h-[40.23px] hover:cursor-pointer">
                 <Link href="#hero" passHref>
                     <Image src={Logo} alt="logo icon" />
@@ -29,8 +30,7 @@ export function Navbar() {
                             How to Contribute
                         </span>
                     </Link>
-                    <span className="hover:cursor-pointer">En</span>
-                    <span className="hover:cursor-pointer">Sign up</span>
+                    <ToggoleLang />
                 </div>
             </div>
         </div>
